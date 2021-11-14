@@ -9,8 +9,8 @@ diffusion_map.fill(0.0)
 
 #simulation constants
 diff_color = ti.Vector([0.7, 0.7, 0.7])
-diff_const = 0.3
-brush_radius = 20
+diff_const = 0.1
+brush_radius = 60
 
 @ti.func #euclidean vector distance
 def vector2d_distance(vec1, vec2):
