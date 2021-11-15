@@ -13,6 +13,7 @@ body_field = ti.Struct.field({
     "acc": ti.types.vector(2, ti.f32),
     "mass": ti.f32,
 }, shape=(nbodies,))
+
 body_field[0].mass = 2
 body_field[0].pos = ti.Vector([0.5, 0.3])
 body_field[0].vel = ti.Vector([0, 4.5e-6])
@@ -71,8 +72,6 @@ veloc_scale = 7.5e3
 for i in range(100000):
     update(100)
     for i in range(nbodies):
-        print(body_field[i].vel)
-        #print(body_field[i].vel)
         gui.circle(body_field[i].pos, radius = 15, color=0x068587)
 
     #acceleration vectors

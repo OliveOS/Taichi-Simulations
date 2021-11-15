@@ -1,11 +1,12 @@
 import taichi as ti
+import logging
 
 #init taichi context + window details
 ti.init(arch=ti.gpu, device_memory_fraction=0.8, excepthook=True)
 n: int = 1200
 pixels = ti.Vector.field(3, shape=(n, n), dtype = float) #n by n field of RGB values
 diffusion_map = ti.field(dtype=float, shape=(n,n))
-diffusion_map.fill(0.0)
+
 
 #simulation constants
 diff_color = ti.Vector([0.7, 0.7, 0.7])
@@ -30,6 +31,7 @@ def diffuse_cell(i, j):
         for l in range(3):
             if (i-1+k) >= 0 and (i-1+k) <= n and (j-1+l) >= 0 and (j-1+l) <= n: #if cell is in range add to sum
                 sum += diffusion_map[i-1+k, j-1+l]
+                logging.debug(diffusion_map[i-1+k, j-1+l])
 
     #get average and disperse
     avg: float = sum/9
