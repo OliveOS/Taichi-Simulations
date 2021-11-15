@@ -6,3 +6,6 @@ Every file is subject to **complete overhaul and/or deletion** at any point.
 # Dependencies
 - Python 3.8.2
 - Taichi
+
+# Broken Files
+- diff_path.py (issue in the diffuse_cell function)
