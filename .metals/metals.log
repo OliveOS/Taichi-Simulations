@@ -2,3 +2,15 @@
 [0m2021.11.16 21:43:23 INFO  time: initialize in 0.29s[0m
 [0m2021.11.16 21:43:23 WARN  Build server is not auto-connectable.[0m
 [0m2021.11.16 21:43:23 WARN  no build tool detected in workspace 'C:\Users\olive\VSCODE\taichitestenv'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Nov 16, 2021 9:43:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 16, 2021 10:40:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 16, 2021 10:41:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 16, 2021 10:41:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 16, 2021 10:42:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 16, 2021 10:42:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
