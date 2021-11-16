@@ -12,5 +12,8 @@
         "Taichi",
         "veloc",
         "vels"
-    ]
+    ],
+    "files.watcherExclude": {
+        "**/target": true
+    }
 }
