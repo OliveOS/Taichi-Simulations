@@ -1,7 +1,7 @@
 import taichi as ti
 
 #init taichi context + window details
-ti.init(arch=ti.gpu, device_memory_fraction=0.8, excepthook=True)
+ti.init(arch=ti.gpu)
 n: int = 1200
 pixels = ti.Vector.field(3, shape=(n, n), dtype = float) #n by n field of RGB values
 diffusion_map = ti.field(dtype=float, shape=(n,n))

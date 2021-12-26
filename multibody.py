@@ -1,7 +1,7 @@
 import taichi as ti
 
 #init taichi context + window details
-ti.init(arch=ti.gpu, device_memory_fraction=0.5, excepthook=True)
+ti.init(arch=ti.gpu) #excepthook property seems broken on mac?
 n: int = 1200
 pixels = ti.field(dtype=float, shape=(n, n))
 
