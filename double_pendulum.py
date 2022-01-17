@@ -27,6 +27,9 @@ pendulum_field[1].omega = 0
 pendulum_field[0].mass = 1
 pendulum_field[1].mass = 1
 
+def polar_to_cartesian(r, theta):
+    pass
+
 #TODO:Calculate remaining initial state of pendula
 #TODO:Write update-omega function
 #TODO:Write update-theta function
